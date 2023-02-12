@@ -73,7 +73,7 @@ Where ```ind_list``` is the list of all individuals of the ontology.
 
 I did this modification, because I faced some problems with the pre-existed function ```disj_inds_of_class(self, class_name)``` of ```armor_manipulation_client.py```.
 
-### Running with roslaunch
+### How to run
 In order to run the application with a launch file you need to install ```x-term``` with the following steps:
 ```
 sudo apt-get update
