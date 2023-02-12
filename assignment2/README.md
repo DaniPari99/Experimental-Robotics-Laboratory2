@@ -113,3 +113,5 @@ It is composed by 4 rooms, 2 corridors and a recharging room where the robot is 
     else:
       move to a corridor
 ```
+* Once the robot reaches the center of the chosen location, it stops for the time needed to accomplish an entire 360 degrees loop to declare the rocation visited.
+* If the battery goes low, it stops every operation he was doing  in order to point to the recharging location and wait the time to have a full charge.
