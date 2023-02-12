@@ -20,3 +20,4 @@ As we can see we have 5 nodes, but there is a sixth file: the ```helper.py``` wh
 
 * **assignment_fsm**: is the node which implements the Finite State Machine which drives the robot through the locations of the map according to the stimuli. It uses external functions provided by the ```helper.py``` node.
 * **battery_state**: is the node which simulates the battery behaviour. The battery is recharged in a randome time belonging to the range [40, 60] seconds and run out in a random time belonging to the range [180, 240] seconds. This node publishes on the topic ```/state/battery_low``` the state of the battery: it is a boolean which is **True** if the battery is low and **False** otherwise.
+* **armor:** is a server already implemented which is used by the ```assignment_fsm``` through the ```helper``` node for doing manipulations or queries on the ontology.
