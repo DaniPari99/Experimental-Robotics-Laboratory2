@@ -115,3 +115,17 @@ It is composed by 4 rooms, 2 corridors and a recharging room where the robot is 
 ```
 * Once the robot reaches the center of the chosen location, it stops for the time needed to accomplish an entire 360 degrees loop to declare the rocation visited.
 * If the battery goes low, it stops every operation it was doing  in order to point to the recharging location and wait the time to have a full charge.
+
+## System's limitations
+* The detecting markers algorithm does not work every time, but with a good percentage higher than 80%
+* The battery simulation mechanism is designed simply to a continuing charging and running out without focus on the moment in which the timer of the battery starts. But I chose 2 different timers: one for the recharging time which is lower [40, 60] seconds which makes the robot coming back at least to the recharging station in time wherever it is; the second one for the running out which is higher [180, 240] seconds.
+
+## Possible improvements
+* the detecting markers algorithm can be improved in order to reach all the 7 markers at any time, maybe by performing upper and down loops until all the 7 markers are detected
+* The battery simulation mechanism can be improved in order to start the recharging timer only when the robot has reached the recharging station. This can be done by subscribing the assignment_fsm node to ```/odometry``` topic in such a way that when the robot position is equal to the coordinates of the recharging station, a global variable is set to True, otherwise to False. When the global variable is true the timer can start, instead if the global variable was False, the timer has to wait until the global variable becomes True (recharging station reached).
+
+## Authors and contacts
+
+[Parisi Daniele Martino](https://github.com/DaniPari99) (4670964)
+
+s4670964@studenti.unige.it
