@@ -85,5 +85,6 @@ roslaunch assignment2 assignment.launch
 ```
 ## Robot model
 
+![Schermata 2023-02-12 alle 18 41 35](https://user-images.githubusercontent.com/62515616/218327487-59b971bb-b243-425a-84e2-8fd5d1406d27.png)
 
 ## Video demonstration
