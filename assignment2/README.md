@@ -8,7 +8,7 @@ Parisi Daniele Martino 4670964
 
 The assignment involves a robot deployed in an indoor environment for surveillance purposes. The robot’s objective is to visit the different locations and stay there for some times. The assignment is the logical continuation of the previous one (look [here](https://github.com/DaniPari99/Experimental-Robotics-Laboratory/tree/main/assignment_1)). Now the objective is the same, but the previous software architecture must be integrated with the new one in order to actually move an urdf robot model in a simulation environment.
 The assignment can be divided in 2 parts:
-* **Detect the all 7 markers:** initially the robot is fixed in a location in which is plenty of 7 markers in all the directions. The markers must be all detected in order to providing environment informations to the robot for creating the topological map of the environment.
+* **Detect the all 7 markers:** initially the robot is fixed in a location in which is plenty of 7 markers in all the directions. The markers must be all detected in order to provide environment informations to the robot for creating the topological map of the environment.
 * **Navigation in the environment** Once all the 7 markers are detected and the topological map is built, the robot is ready to navigate in the environment though the locations in order to patrol the whole environment 
 
 
