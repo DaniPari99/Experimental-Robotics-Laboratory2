@@ -79,10 +79,18 @@ In order to run the application with a launch file you need to install ```x-term
 sudo apt-get update
 sudo apt-get -y install xterm
 ```
-Clone the repository by running:
+Clone the repository in the src folder of your workspace by running:
 ```
+git clone https://github.com/DaniPari99/Experimental-Robotics-Laboratory2.git
+```
+Change the directory in order to be in the src/assignment2/scripts and run:
+```
+chmod +x assignment_fsm.py
+chmod +x helper.py
+chmod +x battery_state.py
+```
+Build the ROS workspace by running  ```catkin_make``` from your root folder
 
-```
 Finally you can run the launch file just typing on the terminal:
 ```
 roslaunch assignment2 assignment.launch
