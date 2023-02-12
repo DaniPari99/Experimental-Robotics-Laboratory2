@@ -14,4 +14,5 @@ The assignment can be divided in 2 parts:
 ## Software architecture
 The following figure shows the software architecture of the assignment:
 
+![image](https://user-images.githubusercontent.com/62515616/218319073-873b6315-d314-4c8a-b8fc-7b35ceceb06a.png)
 
