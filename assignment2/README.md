@@ -45,6 +45,11 @@ As we can see we have 4 states:
 
 For sake of completeness and robustness I also implemented the so called transitions loop: the transition which remains in the current state whenever they are trigguered.
 
+## Custom messages and services used
+* **InfoRoom.msg**: it reproduces the object room, with the name, the coordinates of the center and the connections
+* **RoomConnections.msg**: it reproduces the connections of the rooms through the associated door
+* **RoomInformations.srv**: a service whose request is the id number of the marker and the response instead is the location informations related to that marker.
+
 ## Installation and running
 
 You need to have aRMOR package cloned in the SRC folder of your workspace, if you don't have follow the steps in the following link:
