@@ -28,3 +28,6 @@ As we can see we have 5 nodes, but there is a sixth file: the ```helper.py``` wh
 For sake of completeness the following figure shows the temporal diagram of the software architecture:
 
 ![sw_architecture drawio (1)](https://user-images.githubusercontent.com/62515616/218324264-359559c8-71f5-4bc5-9d5f-73743a5d3620.png)
+
+The diagram shows that the ```battery_state```is always in contact with the ```assignment_fsm``` node through a pub/sub approach, indeed it makes the system going back to the ```assignment_fsm``` immediately in order to make the robot recharging. The same for ```detect_marker``` node wich is in contact with ```assignment_fsm``` node through a pub/sub approach in order for the ```assignment_fsm``` to be always aware about the publishing locations informations.
+The other software components, which are servers, are always active, but they work only if a client sends a request to them. ```assignment_fsm``` sends requests to armor in order to build the topological map at the beginning and then to update it and to do query on it. ```detect_marker``` instead sends requests to ```marker_server``` node in order to retrieve location informations for sending them to ```assignment_fsm```
