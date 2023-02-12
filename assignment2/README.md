@@ -33,7 +33,7 @@ The diagram shows that the ```battery_state```is always in contact with the ```a
 The other software components, which are servers, are always active, but they work only if a client sends a request to them. ```assignment_fsm``` sends requests to armor in order to build the topological map at the beginning and then to update it and to do query on it. ```detect_marker``` instead sends requests to ```marker_server``` node in order to retrieve location informations for sending them to ```assignment_fsm```.
 
 ## States diagram
-The following figure shows the states diagram of the Finite State Machine:
+The following figure shows the states diagram of the Finite State Machine of the robot behaviour:
 
 ![Diagramma senza titolo drawio-2-3](https://user-images.githubusercontent.com/62515616/202918060-40c54de6-60bf-485f-a580-f060d253ae70.png)
 
@@ -44,3 +44,31 @@ As we can see we have 4 states:
 * ```VISIT```: this state is executed in order to visit the chosen location. As soon as the chosen location is visited, the transition **visited** is trigguered, instead if the battery goes low, the transition **tired** is trigguered.
 
 For sake of completeness and robustness I also implemented the so called transitions loop: the transition which remains in the current state whenever they are trigguered.
+
+## Installation and running
+
+You need to have aRMOR package cloned in the SRC folder of your workspace, if you don't have follow the steps in the following link:
+
+[aRMOR installation](https://github.com/EmaroLab/armor/issues/7)
+
+Now you need to modify the armor_api folder by adding in the ```armor_manipulation_client``` node the following function:
+
+```
+def disj_all_inds(self,ind_list):
+        try:
+            res = self._client.call('DISJOINT', 'IND', '', ind_list)
+
+        except rospy.ServiceException as e:
+            raise ArmorServiceCallError("Service call failed upon adding individual {0} to class {1}: {2}".format(ind_name, class_name, e))
+
+        except rospy.ROSException:
+            raise ArmorServiceCallError("Cannot reach ARMOR client: Timeout Expired. Check if ARMOR is running.")
+
+        if res.success:
+            return res.is_consistent
+        else:
+            raise ArmorServiceInternalError(res.error_description, res.exit_code)
+```
+Where ```ind_list``` is the list of all individuals of the ontology.
+
+I did this modification, because I faced some problems with the pre-existed function ```disj_inds_of_class(self, class_name)``` of ```armor_manipulation_client.py```.
