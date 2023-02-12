@@ -87,4 +87,7 @@ roslaunch assignment2 assignment.launch
 
 ![Schermata 2023-02-12 alle 18 41 35](https://user-images.githubusercontent.com/62515616/218327487-59b971bb-b243-425a-84e2-8fd5d1406d27.png)
 
+The robot urdf model adopted is a simple 4-wheels mobile robot equipped with an hokuyo laser sensor and a 3 degrees of freedom arm composed by a rotating base connected to 2 other links through revolute joints. A camera is attached on the end effector of the arm in order to detect the aruco markers.
+The JointStateController interface is used to control the arm's movement, and the PID values have been manually adjusted.
+
 ## Video demonstration
