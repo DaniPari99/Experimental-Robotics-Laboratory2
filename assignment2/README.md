@@ -6,7 +6,7 @@ Parisi Daniele Martino 4670964
 
 (Documentation link).......................................................................................................
 
-The assignment involves a robot deployed in an indoor environment for surveillance purposes. The robot’s objective is to visit the different locations and stay there for some times. The assignment is the logical continuation of the previous one [here](https://github.com/DaniPari99/Experimental-Robotics-Laboratory/tree/main/assignment_1)
+The assignment involves a robot deployed in an indoor environment for surveillance purposes. The robot’s objective is to visit the different locations and stay there for some times. The assignment is the logical continuation of the previous one (look [here](https://github.com/DaniPari99/Experimental-Robotics-Laboratory/tree/main/assignment_1))
 In the second assignment of the Experimental Robotics Laboratory course, you are requested to integrate the architecture developed in the first assignment with a robotic simulation.
 
 To start, you are provided with this package, which contains:
