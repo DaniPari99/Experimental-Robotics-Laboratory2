@@ -108,9 +108,8 @@ It is composed by 4 rooms, 2 corridors and a recharging room where the robot is 
 * The robot moves the first time always to the recharging station.
 * After that the robot can move in a new location chosen with the following priority algorithm:
 ```
-    if there are urgent rooms reachable:
+    if there are urgent reachable rooms:
       move to the most urgent
-      check the room
     else:
       move to a corridor
 ```
