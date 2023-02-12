@@ -79,6 +79,10 @@ In order to run the application with a launch file you need to install ```x-term
 sudo apt-get update
 sudo apt-get -y install xterm
 ```
+Clone the repository by running:
+```
+
+```
 Finally you can run the launch file just typing on the terminal:
 ```
 roslaunch assignment2 assignment.launch
