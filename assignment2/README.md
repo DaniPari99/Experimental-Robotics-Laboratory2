@@ -96,3 +96,5 @@ The JointStateController interface is used to control the arm's movement, and th
 
 ## Working hypothesis and environment
 
+![Schermata 2023-02-12 alle 19 04 06](https://user-images.githubusercontent.com/62515616/218328759-55b079fe-d056-4e08-b437-3eaeb2ffd994.png)
+
