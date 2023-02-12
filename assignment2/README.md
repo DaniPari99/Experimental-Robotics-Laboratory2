@@ -18,4 +18,4 @@ The following figure shows the software architecture of the assignment:
 
 As we can see we have 5 nodes, but there is a sixth file: the ```helper.py``` which is not in the figure, because it is not a node, but only a simple python file usefull for the ```assignment_fsm.py``` node.
 
-* ```assignment_fsm:```
+* ```assignment_fsm```:
