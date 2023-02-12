@@ -31,3 +31,16 @@ For sake of completeness the following figure shows the temporal diagram of the 
 
 The diagram shows that the ```battery_state```is always in contact with the ```assignment_fsm``` node through a pub/sub approach, indeed it makes the system going back to the ```assignment_fsm``` immediately in order to make the robot recharging. The same for ```detect_marker``` node wich is in contact with ```assignment_fsm``` node through a pub/sub approach in order for the ```assignment_fsm``` to be always aware about the publishing locations informations.
 The other software components, which are servers, are always active, but they work only if a client sends a request to them. ```assignment_fsm``` sends requests to armor in order to build the topological map at the beginning and then to update it and to do query on it. ```detect_marker``` instead sends requests to ```marker_server``` node in order to retrieve location informations for sending them to ```assignment_fsm```.
+
+## States diagram
+The following figure shows the states diagram of the Finite State Machine:
+
+![Diagramma senza titolo drawio-2-3](https://user-images.githubusercontent.com/62515616/202918060-40c54de6-60bf-485f-a580-f060d253ae70.png)
+
+As we can see we have 4 states:
+* ```WAIT```: this state is just executed at the beginning and it waits until the ontology map to be loaded. As soon as the ontology is loaded, the transition **loaded** is trigguered.
+* ```SLEEP```: this state is executed in order to recharge the battery of the robot. As soon as the battery goes high, the transition **rested** is trigguered.
+* ```DECIDE```: this state is executed in order to decide the next location to be visited. As soon as the next location is chosen, the transition **decided** is trigguered, instead if the battery goes low, the transition **tired** is trigguered.
+* ```VISIT```: this state is executed in order to visit the chosen location. As soon as the chosen location is visited, the transition **visited** is trigguered, instead if the battery goes low, the transition **tired** is trigguered.
+
+For sake of completeness and robustness I also implemented the so called transitions loop: the transition which remains in the current state whenever they are trigguered.
