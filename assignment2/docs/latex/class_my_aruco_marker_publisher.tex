@@ -1,0 +1,59 @@
+\hypertarget{class_my_aruco_marker_publisher}{}\doxysection{My\+Aruco\+Marker\+Publisher Class Reference}
+\label{class_my_aruco_marker_publisher}\index{MyArucoMarkerPublisher@{MyArucoMarkerPublisher}}
+
+
+counter to count the seconds for temporizing the arm motion  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_aruco_marker_publisher_a84a908ed019fcef418c62e0d1c5f45ef}{My\+Aruco\+Marker\+Publisher}} ()
+\item 
+void \mbox{\hyperlink{class_my_aruco_marker_publisher_ae028928017ce3eaeb3d8ba3389799357}{image\+\_\+callback}} (const sensor\+\_\+msgs\+::\+Image\+Const\+Ptr \&msg)
+\begin{DoxyCompactList}\small\item\em Callback function called whenever a message is published to the {\ttfamily /robot/camera/image\+\_\+raw} topic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+counter to count the seconds for temporizing the arm motion 
+
+A class for detecting markers with the camera and for publishing informations about rooms.
+
+This class detects the Aruco markers with the camera, asks for room informations embedded in them through the {\ttfamily /info\+\_\+room} service (provided by {\ttfamily marker\+\_\+server}) and publish those informations in the {\ttfamily info/room} topic. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_aruco_marker_publisher_a84a908ed019fcef418c62e0d1c5f45ef}\label{class_my_aruco_marker_publisher_a84a908ed019fcef418c62e0d1c5f45ef}} 
+\index{MyArucoMarkerPublisher@{MyArucoMarkerPublisher}!MyArucoMarkerPublisher@{MyArucoMarkerPublisher}}
+\index{MyArucoMarkerPublisher@{MyArucoMarkerPublisher}!MyArucoMarkerPublisher@{MyArucoMarkerPublisher}}
+\doxysubsubsection{\texorpdfstring{MyArucoMarkerPublisher()}{MyArucoMarkerPublisher()}}
+{\footnotesize\ttfamily My\+Aruco\+Marker\+Publisher\+::\+My\+Aruco\+Marker\+Publisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+subscriber to /robot/camera1/image\+\_\+raw topic
+
+publisher to debug topic
+
+create a publisher
+
+while the subscriber in the other node (assignmen\+\_\+fsm) are not ready do nothing
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_aruco_marker_publisher_ae028928017ce3eaeb3d8ba3389799357}\label{class_my_aruco_marker_publisher_ae028928017ce3eaeb3d8ba3389799357}} 
+\index{MyArucoMarkerPublisher@{MyArucoMarkerPublisher}!image\_callback@{image\_callback}}
+\index{image\_callback@{image\_callback}!MyArucoMarkerPublisher@{MyArucoMarkerPublisher}}
+\doxysubsubsection{\texorpdfstring{image\_callback()}{image\_callback()}}
+{\footnotesize\ttfamily void My\+Aruco\+Marker\+Publisher\+::image\+\_\+callback (\begin{DoxyParamCaption}\item[{const sensor\+\_\+msgs\+::\+Image\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Callback function called whenever a message is published to the {\ttfamily /robot/camera/image\+\_\+raw} topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Image message\\
+\hline
+\end{DoxyParams}
+This function detects markers in the received image, retrieves room informations embedded in the marker and send them to \`{}/info/rooms topic. When it found all the 7 markers it sends an empy message indicating that the transmission is over. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{detect__marker_8cpp}{detect\+\_\+marker.\+cpp}}\end{DoxyCompactItemize}

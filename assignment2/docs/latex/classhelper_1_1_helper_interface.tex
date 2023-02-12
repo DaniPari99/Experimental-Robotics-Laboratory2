@@ -1,0 +1,339 @@
+\hypertarget{classhelper_1_1_helper_interface}{}\doxysection{helper.\+Helper\+Interface Class Reference}
+\label{classhelper_1_1_helper_interface}\index{helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_ad0fb8431a7e235cb129ce30ef279b127}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a46855875f66abbcb56a73a84f1c147ce}{reset\+\_\+states}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_abd49edfcc00b28c562042b6c85984540}{Battery\+Low\+Callback}} (self, msg)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_ac7975de6003d026157b347addb31a5a3}{is\+\_\+battery\+\_\+low}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a9c6b19b57558e6af50316a04ed2043a2}{Load\+Ontology}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a597962860e7265f7fdba3fc4d09a5f1b}{Load\+Ontology\+Callback}} (self, msg)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a3f8253afefcc658ceec72dabaf6e348d}{Find\+New\+Loc\+Obj}} (self, next\+\_\+loc)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a00b6094ab08dab7ec7cdbac00b1a4921}{Send\+Goal}} (self, new\+\_\+loc)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a20d9f29efac752479a6f498504778732}{Turn\+Base\+Link}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_abe5684c02a1115b2af4d32ed48900026}{Turn\+Base\+Link\+Callback}} (self, msg)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_ad699f2b0a579d715fdfb782dbacbab1c}{Move\+Robot}} (self, new\+\_\+loc)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_aeb7a0745dd3fb3352db608407ceb0abf}{Set\+Reachable\+Loc}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a3e1ddab56f6b50ab1bc52657792bfa94}{Set\+Urgent\+Loc}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a9c3fa65adb6d697ff9a0f843b25476e8}{Set\+Corridor\+Loc}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a48ae84dfb66094cc84d659bf937afbb8}{Set\+Room\+Loc}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_aedf31680b13452ef9401e031b9b8a206}{Choose}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_ae687d69aba65c6abba53539550f2a5cb}{Visit\+Location}} (self, room\+\_\+chosen)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_a84ac25257ef9f3e0d3b410d4069fb351}{controller\+\_\+client}} (self)
+\item 
+def \mbox{\hyperlink{classhelper_1_1_helper_interface_ad380cd106fb06454df0300e4bbce45c8}{Check\+Robot\+Position}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classhelper_1_1_helper_interface_a09edeb018a488e0024ede622754f3ad0}\label{classhelper_1_1_helper_interface_a09edeb018a488e0024ede622754f3ad0}} 
+{\bfseries mutex}
+\item 
+\mbox{\Hypertarget{classhelper_1_1_helper_interface_ad522622d8a0a5574d167c6fa9c19161b}\label{classhelper_1_1_helper_interface_ad522622d8a0a5574d167c6fa9c19161b}} 
+{\bfseries movebase\+\_\+client}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}class for implementing the helper interface.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classhelper_1_1_helper_interface_ad0fb8431a7e235cb129ce30ef279b127}\label{classhelper_1_1_helper_interface_ad0fb8431a7e235cb129ce30ef279b127}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructor function of the HelperInterface class.
+
+Args:
+   None
+
+Returns:
+   None
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classhelper_1_1_helper_interface_abd49edfcc00b28c562042b6c85984540}\label{classhelper_1_1_helper_interface_abd49edfcc00b28c562042b6c85984540}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!BatteryLowCallback@{BatteryLowCallback}}
+\index{BatteryLowCallback@{BatteryLowCallback}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{BatteryLowCallback()}{BatteryLowCallback()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Battery\+Low\+Callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function callback called whenever a new data is published in the topic battery_low by the node battery_state.
+
+Args:
+    msg(Bool): the battery state
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_ad380cd106fb06454df0300e4bbce45c8}\label{classhelper_1_1_helper_interface_ad380cd106fb06454df0300e4bbce45c8}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!CheckRobotPosition@{CheckRobotPosition}}
+\index{CheckRobotPosition@{CheckRobotPosition}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{CheckRobotPosition()}{CheckRobotPosition()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Check\+Robot\+Position (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the finite state machine node in order to know in which location the robot is.
+
+Args:
+    None
+
+Returns:
+    robot_position(string): the current robot position
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_aedf31680b13452ef9401e031b9b8a206}\label{classhelper_1_1_helper_interface_aedf31680b13452ef9401e031b9b8a206}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!Choose@{Choose}}
+\index{Choose@{Choose}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{Choose()}{Choose()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Choose (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the finite state machine to choose the next location due to the reachable locations,
+the urgent ones and knowing that the priority is: firstly we see
+the reachable urgent locations, then the corridors and if we have
+more than one possibility I choose rondomly from a list of possibilities.
+
+Args:
+    None
+
+Returns:
+    choice(string): the location chosen
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a84ac25257ef9f3e0d3b410d4069fb351}\label{classhelper_1_1_helper_interface_a84ac25257ef9f3e0d3b410d4069fb351}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!controller\_client@{controller\_client}}
+\index{controller\_client@{controller\_client}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{controller\_client()}{controller\_client()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+controller\+\_\+client (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the visit location function in order to call the controller server for simulating the random motion of the robot in a room.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a3f8253afefcc658ceec72dabaf6e348d}\label{classhelper_1_1_helper_interface_a3f8253afefcc658ceec72dabaf6e348d}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!FindNewLocObj@{FindNewLocObj}}
+\index{FindNewLocObj@{FindNewLocObj}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{FindNewLocObj()}{FindNewLocObj()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Find\+New\+Loc\+Obj (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{next\+\_\+loc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called to retrieve an object room that matches with the name of the next location chosen
+
+Args:
+    next_loc(string): the next location which robot must visit
+
+Returns:
+    location_info[i](obj): an object with the all informations about the rooms
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_ac7975de6003d026157b347addb31a5a3}\label{classhelper_1_1_helper_interface_ac7975de6003d026157b347addb31a5a3}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!is\_battery\_low@{is\_battery\_low}}
+\index{is\_battery\_low@{is\_battery\_low}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{is\_battery\_low()}{is\_battery\_low()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+is\+\_\+battery\+\_\+low (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the finite state machine node to get the battery state that concerns the battery level.
+The returning value will be `True` if the battery is low, `False` otherwise.
+
+Args:
+    None
+
+Returns:
+    _battery_low(Bool): The state of the battery
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a9c6b19b57558e6af50316a04ed2043a2}\label{classhelper_1_1_helper_interface_a9c6b19b57558e6af50316a04ed2043a2}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!LoadOntology@{LoadOntology}}
+\index{LoadOntology@{LoadOntology}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{LoadOntology()}{LoadOntology()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Load\+Ontology (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the finite state machine node for loading the map of the ontology.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a597962860e7265f7fdba3fc4d09a5f1b}\label{classhelper_1_1_helper_interface_a597962860e7265f7fdba3fc4d09a5f1b}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!LoadOntologyCallback@{LoadOntologyCallback}}
+\index{LoadOntologyCallback@{LoadOntologyCallback}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{LoadOntologyCallback()}{LoadOntologyCallback()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Load\+Ontology\+Callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called whenever a message of type 'InfoRoom' is published in the topic "/info/rooms"
+
+Args:
+    msg(InfoRoom): the informations about the locations of the environment
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_ad699f2b0a579d715fdfb782dbacbab1c}\label{classhelper_1_1_helper_interface_ad699f2b0a579d715fdfb782dbacbab1c}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!MoveRobot@{MoveRobot}}
+\index{MoveRobot@{MoveRobot}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{MoveRobot()}{MoveRobot()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Move\+Robot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{new\+\_\+loc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the finite state machine node for moving the robot from the current location to the chosen one.
+In this function are updated the timestamps in order to query correctly the urgent location for the next queries
+
+Args:
+    new_loc(string): location chosen in the 'decide' state of the finite state machine node
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a46855875f66abbcb56a73a84f1c147ce}\label{classhelper_1_1_helper_interface_a46855875f66abbcb56a73a84f1c147ce}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!reset\_states@{reset\_states}}
+\index{reset\_states@{reset\_states}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{reset\_states()}{reset\_states()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+reset\+\_\+states (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to reset the battery state.
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a00b6094ab08dab7ec7cdbac00b1a4921}\label{classhelper_1_1_helper_interface_a00b6094ab08dab7ec7cdbac00b1a4921}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!SendGoal@{SendGoal}}
+\index{SendGoal@{SendGoal}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{SendGoal()}{SendGoal()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Send\+Goal (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{new\+\_\+loc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called to send the goal to the action server
+
+Args:
+    next_loc(string): the next location which robot must visit
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a9c3fa65adb6d697ff9a0f843b25476e8}\label{classhelper_1_1_helper_interface_a9c3fa65adb6d697ff9a0f843b25476e8}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!SetCorridorLoc@{SetCorridorLoc}}
+\index{SetCorridorLoc@{SetCorridorLoc}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{SetCorridorLoc()}{SetCorridorLoc()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Set\+Corridor\+Loc (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the Choose function in order to set the corridors.
+
+Args:
+    None
+
+Returns:
+    corridor_loc(string): the list of corridors
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_aeb7a0745dd3fb3352db608407ceb0abf}\label{classhelper_1_1_helper_interface_aeb7a0745dd3fb3352db608407ceb0abf}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!SetReachableLoc@{SetReachableLoc}}
+\index{SetReachableLoc@{SetReachableLoc}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{SetReachableLoc()}{SetReachableLoc()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Set\+Reachable\+Loc (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the Choose function in order to set the reachable location by deleting the location 'E'.
+
+Args:
+    None
+
+Returns:
+    reachable_loc(string): the list of reachable locations
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a48ae84dfb66094cc84d659bf937afbb8}\label{classhelper_1_1_helper_interface_a48ae84dfb66094cc84d659bf937afbb8}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!SetRoomLoc@{SetRoomLoc}}
+\index{SetRoomLoc@{SetRoomLoc}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{SetRoomLoc()}{SetRoomLoc()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Set\+Room\+Loc (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the Choose function in order to set the Rooms.
+
+Args:
+    None
+
+Returns:
+    room_loc(string): the list of rooms
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a3e1ddab56f6b50ab1bc52657792bfa94}\label{classhelper_1_1_helper_interface_a3e1ddab56f6b50ab1bc52657792bfa94}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!SetUrgentLoc@{SetUrgentLoc}}
+\index{SetUrgentLoc@{SetUrgentLoc}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{SetUrgentLoc()}{SetUrgentLoc()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Set\+Urgent\+Loc (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the Choose function in order to set the urgent locations by deleting the location 'E' and the 2 corridors.
+
+Args:
+    None
+
+Returns:
+    urgent_loc(string): the list of urgent locations
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_a20d9f29efac752479a6f498504778732}\label{classhelper_1_1_helper_interface_a20d9f29efac752479a6f498504778732}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!TurnBaseLink@{TurnBaseLink}}
+\index{TurnBaseLink@{TurnBaseLink}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{TurnBaseLink()}{TurnBaseLink()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Turn\+Base\+Link (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called to do an entire loop of the arm_base_joint
+
+Args:
+    None
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_abe5684c02a1115b2af4d32ed48900026}\label{classhelper_1_1_helper_interface_abe5684c02a1115b2af4d32ed48900026}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!TurnBaseLinkCallback@{TurnBaseLinkCallback}}
+\index{TurnBaseLinkCallback@{TurnBaseLinkCallback}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{TurnBaseLinkCallback()}{TurnBaseLinkCallback()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Turn\+Base\+Link\+Callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called whenever a message of type Float64 is published in the topic "/robot/joint1_position_controller/command" in order to monitorate the current configuration of the first joint
+
+Args:
+    msg(Float64): the current configuration of first joint
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classhelper_1_1_helper_interface_ae687d69aba65c6abba53539550f2a5cb}\label{classhelper_1_1_helper_interface_ae687d69aba65c6abba53539550f2a5cb}} 
+\index{helper.HelperInterface@{helper.HelperInterface}!VisitLocation@{VisitLocation}}
+\index{VisitLocation@{VisitLocation}!helper.HelperInterface@{helper.HelperInterface}}
+\doxysubsubsection{\texorpdfstring{VisitLocation()}{VisitLocation()}}
+{\footnotesize\ttfamily def helper.\+Helper\+Interface.\+Visit\+Location (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{room\+\_\+chosen }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function called by the finite state machine to visit the location chosen.
+
+Args:
+    room_chosen(string): room chosen to be visited
+
+Returns:
+    None
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/helper.\+py\end{DoxyCompactItemize}
