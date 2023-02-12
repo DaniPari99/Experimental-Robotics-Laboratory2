@@ -91,3 +91,8 @@ The robot urdf model adopted is a simple 4-wheels mobile robot equipped with an 
 The JointStateController interface is used to control the arm's movement, and the PID values have been manually adjusted.
 
 ## Video demonstration
+
+
+
+## Working hypothesis and environment
+
