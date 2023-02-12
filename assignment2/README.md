@@ -94,11 +94,14 @@ The JointStateController interface is used to control the arm's movement, and th
 
 
 
-## Working hypothesis and environment
+## environment
 The environment is shown in the following figure:
 
 ![Schermata 2023-02-12 alle 19 04 06](https://user-images.githubusercontent.com/62515616/218328759-55b079fe-d056-4e08-b437-3eaeb2ffd994.png)
 
 This is the Gazebo 3D simulation environment which is represented in the [worlds](https://github.com/DaniPari99/Experimental-Robotics-Laboratory2/tree/main/assignment2/worlds) directory. 
 
-It is composed by 4 rooms, 2 corridors and a recharging room where the robot is spawned at the beginning. actually the robot starts in an additional room directly connected to the recharging room 'E', where it finds 7 markers which he has to detect in order to collect informations about the 7 locations of the topological map. I sligthly modified the Gazebo file of the environment: I changed the color of the Aruco markers from green to white for increasing the contrast, in order to facilitate the detecting operation of the robot 
+It is composed by 4 rooms, 2 corridors and a recharging room where the robot is spawned at the beginning. actually the robot starts in an additional room directly connected to the recharging room 'E', where it finds 7 markers which he has to detect in order to collect informations about the 7 locations of the topological map. I sligthly modified the Gazebo file of the environment: I changed the color of the Aruco markers from green to white for increasing the contrast, in order to facilitate the detecting operation of the robot. 
+
+## Working hypothesis
+The robot at the beginning is spawned in the starting location ()
