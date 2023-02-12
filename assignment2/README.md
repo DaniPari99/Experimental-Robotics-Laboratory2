@@ -25,5 +25,6 @@ As we can see we have 5 nodes, but there is a sixth file: the ```helper.py``` wh
 * **detect_marker**: the node is capable of performing a markers detecting algorithm which makes the robot's arm doing 2 entire 360 degrees loop: the first to detect the markers at the bottom of its field of view and the second to detect the markers at the top. It is the client node which sends requests (the id of the marker detected) to the server ```marker_server``` node and receives responses about locations informations. The node then sends to the ```assignment_fsm``` node a custom message of type ```/info/rooms``` which contains no more than the ```RoomInformation.srv``` response. These informations are used by the ```assignment_fsm``` node for building the topological map of the environment.
 
 ## Temporal diagram
+For sake of completeness the following figure shows the temporal diagram of the software architecture:
 
 ![sw_architecture drawio (1)](https://user-images.githubusercontent.com/62515616/218324264-359559c8-71f5-4bc5-9d5f-73743a5d3620.png)
