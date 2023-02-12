@@ -83,3 +83,7 @@ Finally you can run the launch file just typing on the terminal:
 ```
 roslaunch assignment2 assignment.launch
 ```
+## Robot model
+
+
+## Video demonstration
