@@ -105,5 +105,12 @@ It is composed by 4 rooms, 2 corridors and a recharging room where the robot is 
 
 ## Working hypothesis
 * The robot at the beginning is spawned in the starting location (x = -6.0, y = 11.0). It remains in this position until all the 7 markers are detected and the topological map built.
-* The robot moves the first time always to the recharging station
-
+* The robot moves the first time always to the recharging station.
+* After that the robot can move in a new location chosen with the following priority algorithm:
+```
+    if there are urgent rooms reachable:
+      move to the most urgent
+      check the room
+    else:
+      move to a corridor
+```
