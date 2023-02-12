@@ -104,4 +104,6 @@ This is the Gazebo 3D simulation environment which is represented in the [worlds
 It is composed by 4 rooms, 2 corridors and a recharging room where the robot is spawned at the beginning. actually the robot starts in an additional room directly connected to the recharging room 'E', where it finds 7 markers which he has to detect in order to collect informations about the 7 locations of the topological map. I sligthly modified the Gazebo file of the environment: I changed the color of the Aruco markers from green to white for increasing the contrast, in order to facilitate the detecting operation of the robot. 
 
 ## Working hypothesis
-The robot at the beginning is spawned in the starting location ()
+* The robot at the beginning is spawned in the starting location (x = -6.0, y = 11.0). It remains in this position until all the 7 markers are detected and the topological map built.
+* The robot moves the first time always to the recharging station
+
