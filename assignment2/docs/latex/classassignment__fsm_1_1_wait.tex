@@ -1,0 +1,68 @@
+\hypertarget{classassignment__fsm_1_1_wait}{}\doxysection{assignment\+\_\+fsm.\+Wait Class Reference}
+\label{classassignment__fsm_1_1_wait}\index{assignment\_fsm.Wait@{assignment\_fsm.Wait}}
+
+
+Inheritance diagram for assignment\+\_\+fsm.\+Wait\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classassignment__fsm_1_1_wait__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for assignment\+\_\+fsm.\+Wait\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classassignment__fsm_1_1_wait__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classassignment__fsm_1_1_wait_ab482d6d30cb11e97cc952d2c3f700a9b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, helper\+\_\+interface)
+\item 
+def \mbox{\hyperlink{classassignment__fsm_1_1_wait_a4bd1910d7bd2c8ae57736a7570a4a045}{execute}} (self, userdata)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}class to implement the 'WAIT' state of the Finite State Machine in which the robot
+waits for the ontology to be loaded.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classassignment__fsm_1_1_wait_ab482d6d30cb11e97cc952d2c3f700a9b}\label{classassignment__fsm_1_1_wait_ab482d6d30cb11e97cc952d2c3f700a9b}} 
+\index{assignment\_fsm.Wait@{assignment\_fsm.Wait}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!assignment\_fsm.Wait@{assignment\_fsm.Wait}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def assignment\+\_\+fsm.\+Wait.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{helper\+\_\+interface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructor function of the Wait class.
+Args:
+    helper_interface(objet): object created by the class 'HelperInterface'.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classassignment__fsm_1_1_wait_a4bd1910d7bd2c8ae57736a7570a4a045}\label{classassignment__fsm_1_1_wait_a4bd1910d7bd2c8ae57736a7570a4a045}} 
+\index{assignment\_fsm.Wait@{assignment\_fsm.Wait}!execute@{execute}}
+\index{execute@{execute}!assignment\_fsm.Wait@{assignment\_fsm.Wait}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily def assignment\+\_\+fsm.\+Wait.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userdata }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function executed only at the first state (WAIT) of the finite state machine.
+
+The returned 'transition' is only 'loaded'.
+Args:
+    userdata: variable passed between the states of the fsm.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/assignment\+\_\+fsm.\+py\end{DoxyCompactItemize}

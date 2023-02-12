@@ -1,0 +1,65 @@
+\hypertarget{namespacehelper}{}\doxysection{helper Namespace Reference}
+\label{namespacehelper}\index{helper@{helper}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classhelper_1_1_action_client_helper}{Action\+Client\+Helper}}
+\item 
+class \mbox{\hyperlink{classhelper_1_1_helper_interface}{Helper\+Interface}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacehelper_aac866170d6c00ee542ff378222d674b5}\label{namespacehelper_aac866170d6c00ee542ff378222d674b5}} 
+{\bfseries path} = dirname(realpath(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\item 
+\mbox{\Hypertarget{namespacehelper_abe4660fefe3bc2a9958ada7448cd1014}\label{namespacehelper_abe4660fefe3bc2a9958ada7448cd1014}} 
+list {\bfseries room\+\_\+list} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacehelper_a32fccdfa549f5e8db698afaf8ecacf1b}\label{namespacehelper_a32fccdfa549f5e8db698afaf8ecacf1b}} 
+list {\bfseries door\+\_\+list} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacehelper_aac4e2928dd0b1798d0151d514c945d5d}\label{namespacehelper_aac4e2928dd0b1798d0151d514c945d5d}} 
+list {\bfseries door\+\_\+list\+\_\+result} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacehelper_a557a6acfb42bd8f80b74edbe1001c812}\label{namespacehelper_a557a6acfb42bd8f80b74edbe1001c812}} 
+list {\bfseries list\+\_\+ind} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacehelper_adb5fbf878b06c710271539e641726861}\label{namespacehelper_adb5fbf878b06c710271539e641726861}} 
+bool {\bfseries ontology\+\_\+loaded} = False
+\item 
+\mbox{\Hypertarget{namespacehelper_a57605f3125cad110f54410e4de20dee5}\label{namespacehelper_a57605f3125cad110f54410e4de20dee5}} 
+list {\bfseries location\+\_\+info} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacehelper_aa16a012971a00431f22a68275b3adca4}\label{namespacehelper_aa16a012971a00431f22a68275b3adca4}} 
+float {\bfseries base\+\_\+link\+\_\+config} = 0.\+0
+\item 
+\mbox{\Hypertarget{namespacehelper_a565b29f546ba37ee6347438ef544b20f}\label{namespacehelper_a565b29f546ba37ee6347438ef544b20f}} 
+{\bfseries client} = Armor\+Client(\char`\"{}test5\char`\"{},\char`\"{}ontology5\char`\"{})
+\item 
+\mbox{\Hypertarget{namespacehelper_a9ec8d99e8443600319d31aa34fe4f4c8}\label{namespacehelper_a9ec8d99e8443600319d31aa34fe4f4c8}} 
+int {\bfseries next\+\_\+location\+\_\+obj} = 0
+\item 
+\mbox{\Hypertarget{namespacehelper_a58b023630e305bc2091b4a6a767e3271}\label{namespacehelper_a58b023630e305bc2091b4a6a767e3271}} 
+string {\bfseries L\+O\+G\+\_\+\+T\+AG} = \textquotesingle{}behaviour\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: helper
+   :platform: Unix
+   :synopsis: Python module for helping the finite stete machine module
+
+.. moduleauthor:: Daniele Martino Parisi
+
+Subscribes to:
+    'state/battery_low': where battery_state publishes the battery state
+
+Clients:
+   :'controller': for implementing the visit of a room
+
+   :'client': for connecting with Armor server
+
+The node implements a class which contains a lot of functions that can help the finite state machine node in performing its task.
+\end{DoxyVerb}
+ 
