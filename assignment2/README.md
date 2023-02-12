@@ -11,4 +11,7 @@ The assignment can be divided in 2 parts:
 * **Detect the all 7 markers:** initially the robot is fixed in a location in which is plenty of 7 markers in all the directions. The markers must be all detected in order to provide environment informations to the robot for creating the topological map of the environment.
 * **Navigation in the environment** Once all the 7 markers are detected and the topological map is built, the robot is ready to navigate in the environment through the locations in order to patrol the whole environment area 
 
+## Software architecture
+The following figure shows the software architecture of the assignment:
+
 
