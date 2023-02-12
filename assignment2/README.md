@@ -16,4 +16,4 @@ The following figure shows the software architecture of the assignment:
 
 ![sw_architecture drawio](https://user-images.githubusercontent.com/62515616/218319207-ad86e999-6711-47d6-a86c-64f35287d74c.png)
 
-
+As we can see we have 5 nodes
