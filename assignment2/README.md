@@ -18,4 +18,5 @@ The following figure shows the software architecture of the assignment:
 
 As we can see we have 5 nodes, but there is a sixth file: the ```helper.py``` which is not in the figure, because it is not a node, but only a simple python file usefull for the ```assignment_fsm.py``` node.
 
-* ```assignment_fsm```:
+* **assignment_fsm**: is the node which implements the Finite State Machine which drives the robot through the locations of the map according to the stimuli. It uses external functions provided by the ```helper.py``` node.
+* **battery_state**: is the node which simulates the battery behaviour. The battery is recharged in a randome time belonging to the range [40, 60] seconds and run out in a random time belonging to the range [180, 240] seconds. This node publishes on the topic ```/state/battery_low``` the state of the battery: it is a boolean which is **True** if the battery is low and **False** otherwise.
