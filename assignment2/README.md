@@ -116,6 +116,7 @@ In this video we can see the 2 most important phases of the robot's behavior:
 
 **1)** Initially the robot is fixed at the position (x = -6.0, y = 11.0) and from the camera of ```Rviz``` we can see that are performed 2 entire loops in order to detect all the 7 markers. From the ```assignment_fsm``` terminal we can see the print of the correspondent location informations for each marker. After the seventh marker is detected the video is switched from Rviz to Gazebo in order to see the robot's movement through the locations.
 
+
 **2)** In the second phase we can see the robot initially looking for a way of out from the initial location. It requires sometime to exit from it, because it has to build the map of the environment and localize it within the environment. Once it has understood how to do, it reach the recharging station ready for patrolling the other 6 locations.
 
 ## environment
