@@ -4,7 +4,7 @@
 
 Parisi Daniele Martino 4670964
 
-[documentation](https://danipari99.github.io/Experimental-Robotics-Laboratory2/)
+[code documentation](https://danipari99.github.io/Experimental-Robotics-Laboratory2/)
 
 The assignment involves a robot deployed in an indoor environment for surveillance purposes. The robot’s objective is to visit the different locations and stay there for some times. The assignment is the logical continuation of the previous one (look [here](https://github.com/DaniPari99/Experimental-Robotics-Laboratory/tree/main/assignment_1)). Now the objective is the same, but the previous software architecture must be integrated with the new one in order to actually move an urdf robot model in a simulation environment.
 The assignment can be divided in 2 parts:
