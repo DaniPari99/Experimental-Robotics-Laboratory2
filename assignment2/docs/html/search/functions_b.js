@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['visitlocation_79',['VisitLocation',['../classhelper_1_1_helper_interface.html#ae687d69aba65c6abba53539550f2a5cb',1,'helper::HelperInterface']]]
-];
