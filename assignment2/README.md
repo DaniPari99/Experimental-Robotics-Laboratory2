@@ -110,7 +110,10 @@ The JointStateController interface is used to control the arm's movement, and th
 ## Video demonstration
 
 
-![assignment2copiatagliatogif2](https://user-images.githubusercontent.com/62515616/218344984-4b581e3a-ba0e-4972-9224-e366a349b8e5.gif)
+
+https://user-images.githubusercontent.com/62515616/218697303-2599fdde-4ae1-4cc1-a90e-4185a3e3f152.mp4
+
+
 
 In this video we can see the 2 most important phases of the robot's behavior:
 
