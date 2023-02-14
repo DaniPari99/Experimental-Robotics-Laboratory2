@@ -25,8 +25,8 @@ As we can see we have 8 nodes, but there is a sixth file: the ```helper.py``` wh
 * **marker_server**: it is a server which implements the ```RoomInformation.srv```. It receives from a client a request of type **int32** corresponding to the detected marker id and sends to the client a response which contains 4 fields: a **string** with the name of the location, two **float32** with the coordinates (x, y) of the center of the location and a **list** which contains the **connections** of that locations.
 * **detect_marker**: the node is capable of performing a markers detecting algorithm which makes the robot's arm doing 2 entire 360 degrees loop: the first to detect the markers at the bottom of its field of view and the second to detect the markers at the top. The motion of the arm is performed by publishing in to 3 different topics ```/robot/joint(i)_position_controller/command``` used for publishing the goal configuration of the i-th joint. This node is also subscribed to a gazebo topic ```/robot/camera1/image_raw``` for detecting the marker's ID. It is the client node which sends requests (the id of the marker detected) to the server ```marker_server``` node and receives responses about locations informations. The node then sends to the ```assignment_fsm``` node a custom message of type ```/info/rooms``` which contains no more than the ```RoomInformation.srv``` response. These informations are used by the ```assignment_fsm``` node for building the topological map of the environment.
 
-## Temporal diagram
-For sake of completeness the following figure shows the temporal diagram of the software architecture:
+## sequence diagram
+For sake of completeness the following figure shows the sequence diagram of the software architecture:
 
 ![sw_architecture drawio (1)](https://user-images.githubusercontent.com/62515616/218324264-359559c8-71f5-4bc5-9d5f-73743a5d3620.png)
 
