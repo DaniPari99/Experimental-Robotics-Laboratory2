@@ -16,6 +16,9 @@ The following figure shows the software architecture of the assignment:
 
 ![sw_architecture drawio](https://user-images.githubusercontent.com/62515616/218319207-ad86e999-6711-47d6-a86c-64f35287d74c.png)
 
+![components_diagram drawio](https://user-images.githubusercontent.com/62515616/218784887-80b0e851-5e2a-4e44-b100-43566e0d8475.png)
+
+
 As we can see we have 5 nodes, but there is a sixth file: the ```helper.py``` which is not in the figure, because it is not a node, but only a simple python file usefull for the ```assignment_fsm.py``` node.
 
 * **assignment_fsm**: is the node which implements the Finite State Machine which drives the robot through the locations of the map according to the stimuli. It uses external functions provided by the ```helper.py``` node.
